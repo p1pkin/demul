@@ -1,0 +1,49 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "demul", "demul.vcproj", "{C826976F-27AD-4FED-9135-379D354EA6B3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FCCB8F4E-3237-44A2-A662-A292CFD5C6D1} = {FCCB8F4E-3237-44A2-A662-A292CFD5C6D1}
+		{6396A770-F8AD-43C8-8091-C3CF0A361075} = {6396A770-F8AD-43C8-8091-C3CF0A361075}
+		{C543B598-978A-4B60-B2A7-028A1DD8E516} = {C543B598-978A-4B60-B2A7-028A1DD8E516}
+		{6320B2E5-05CC-4D34-A21D-36EC0CF35E69} = {6320B2E5-05CC-4D34-A21D-36EC0CF35E69}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gdrDemul", "..\..\gdrDemul\vc8\gdrDemul.vcproj", "{FCCB8F4E-3237-44A2-A662-A292CFD5C6D1}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gpuDemul", "..\..\gpuDemul\vc8\gpuDemul.vcproj", "{C543B598-978A-4B60-B2A7-028A1DD8E516}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "padDemul", "..\..\padDemul\vc8\padDemul.vcproj", "{6320B2E5-05CC-4D34-A21D-36EC0CF35E69}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "spuDemul", "..\..\spuDemul\vc8\spuDemul.vcproj", "{6396A770-F8AD-43C8-8091-C3CF0A361075}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C826976F-27AD-4FED-9135-379D354EA6B3}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C826976F-27AD-4FED-9135-379D354EA6B3}.Debug|Win32.Build.0 = Debug|Win32
+		{C826976F-27AD-4FED-9135-379D354EA6B3}.Release|Win32.ActiveCfg = Release|Win32
+		{C826976F-27AD-4FED-9135-379D354EA6B3}.Release|Win32.Build.0 = Release|Win32
+		{FCCB8F4E-3237-44A2-A662-A292CFD5C6D1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FCCB8F4E-3237-44A2-A662-A292CFD5C6D1}.Debug|Win32.Build.0 = Debug|Win32
+		{FCCB8F4E-3237-44A2-A662-A292CFD5C6D1}.Release|Win32.ActiveCfg = Release|Win32
+		{FCCB8F4E-3237-44A2-A662-A292CFD5C6D1}.Release|Win32.Build.0 = Release|Win32
+		{C543B598-978A-4B60-B2A7-028A1DD8E516}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C543B598-978A-4B60-B2A7-028A1DD8E516}.Debug|Win32.Build.0 = Debug|Win32
+		{C543B598-978A-4B60-B2A7-028A1DD8E516}.Release|Win32.ActiveCfg = Release|Win32
+		{C543B598-978A-4B60-B2A7-028A1DD8E516}.Release|Win32.Build.0 = Release|Win32
+		{6320B2E5-05CC-4D34-A21D-36EC0CF35E69}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6320B2E5-05CC-4D34-A21D-36EC0CF35E69}.Debug|Win32.Build.0 = Debug|Win32
+		{6320B2E5-05CC-4D34-A21D-36EC0CF35E69}.Release|Win32.ActiveCfg = Release|Win32
+		{6320B2E5-05CC-4D34-A21D-36EC0CF35E69}.Release|Win32.Build.0 = Release|Win32
+		{6396A770-F8AD-43C8-8091-C3CF0A361075}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6396A770-F8AD-43C8-8091-C3CF0A361075}.Debug|Win32.Build.0 = Debug|Win32
+		{6396A770-F8AD-43C8-8091-C3CF0A361075}.Release|Win32.ActiveCfg = Release|Win32
+		{6396A770-F8AD-43C8-8091-C3CF0A361075}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

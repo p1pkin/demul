@@ -1,0 +1,151 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_BIOS_AND_PLUGINS DIALOGEX 0, 0, 251, 332
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Bios & Plugins"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,128,310,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,189,310,50,14
+    GROUPBOX        "Video plugin",IDC_STATIC,49,2,148,46
+    COMBOBOX        IDC_BIOS_DIALOG_GPU,58,22,133,100,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Sound plugin",IDC_STATIC,49,49,148,46
+    COMBOBOX        IDC_BIOS_DIALOG_SPU,58,70,133,100,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "GD-ROM plugin",IDC_STATIC,49,96,148,46
+    COMBOBOX        IDC_BIOS_DIALOG_GDR,58,118,133,100,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Game Pad plugin",IDC_STATIC,49,143,148,46
+    COMBOBOX        IDC_BIOS_DIALOG_PAD,58,166,133,100,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Bios",IDC_STATIC,7,195,237,54
+    EDITTEXT        IDC_BIOS_DIALOG_BIOS,15,210,168,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP
+    EDITTEXT        IDC_BIOS_DIALOG_BIOS_DESCRIPTION,15,231,219,12,
+                    ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP,
+                    WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Select",IDC_BIOS_DIALOG_BIOS_SELECT,190,210,45,12
+    GROUPBOX        "Flash",IDC_STATIC,7,250,237,54
+    EDITTEXT        IDC_BIOS_DIALOG_FLASH,15,264,168,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP
+    EDITTEXT        IDC_BIOS_DIALOG_FLASH_DESCRIPTION,15,286,219,12,
+                    ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP,
+                    WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Select",IDC_BIOS_DIALOG_FLASH_SELECT,190,264,45,12
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_MAIN_ICON           ICON                    "demul_red.ico"
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+MENU MENU 
+BEGIN
+    MENUITEM "Run",                         IDR_EMU_RUN
+    POPUP "Config"
+    BEGIN
+        MENUITEM "Game Pad",                    ID_CONFIG_PAD
+        MENUITEM "Sound",                       ID_CONFIG_SPU
+        MENUITEM "GD-ROM",                      ID_CONFIG_GDR
+        MENUITEM "Video",                       ID_CONFIG_GPU
+        MENUITEM SEPARATOR
+        POPUP "Mode"
+        BEGIN
+            MENUITEM "Interpreter",                 ID_MODE_INTERPRETER
+            MENUITEM "DynaRec",                     ID_MODE_DYNAREC
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Bios && Plugins",             ID_CONFIG_BIOS_AND_PLUGINS
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

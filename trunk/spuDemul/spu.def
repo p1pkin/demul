@@ -1,0 +1,18 @@
+
+LIBRARY	"spuDemul"
+
+EXPORTS
+	getType				@2
+	getName				@3
+	spuOpen				@4
+	spuClose			@5
+	spuReset			@6
+	spuConfigure		@7
+	spuAbout			@8
+	spuSync				@9
+	spuRead8			@10
+	spuRead16			@11
+	spuRead32			@12
+	spuWrite8			@13
+	spuWrite16			@14
+	spuWrite32			@15

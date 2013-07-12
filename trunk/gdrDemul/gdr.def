@@ -1,0 +1,15 @@
+
+LIBRARY	"gdrDemul"
+
+EXPORTS
+	getType				@2
+	getName				@3
+	gdrOpen				@4
+	gdrClose			@5
+	gdrReset			@6
+	gdrConfigure		@7
+	gdrAbout			@8
+	gdrReadTOC			@9
+	gdrReadInfoSession	@10
+	gdrGetStatus		@11
+	gdrReadSectors		@12

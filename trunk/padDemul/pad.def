@@ -1,0 +1,13 @@
+
+LIBRARY	"padDemul"
+
+EXPORTS
+	getType				@2
+	getName				@3
+	padOpen				@4
+	padClose			@5
+	padReset			@6
+	padConfigure		@7
+	padAbout			@8
+	padJoyCaps			@9
+	padReadJoy			@10
