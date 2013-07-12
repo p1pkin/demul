@@ -1,0 +1,17 @@
+
+LIBRARY	"gpuDemul"
+
+EXPORTS
+	getType				@2
+	getName				@3
+	gpuOpen				@4
+	gpuClose			@5
+	gpuReset			@6
+	gpuConfigure		@7
+	gpuAbout			@8
+	gpuSync				@9
+	gpuSetIrqHandler	@10
+	gpuRead32			@11
+	gpuWrite32			@12
+	gpuTaTransfer		@13
+	gpuYuvTransfer		@14

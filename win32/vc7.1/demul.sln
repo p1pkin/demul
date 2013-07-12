@@ -1,0 +1,53 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "demul", "demul.vcproj", "{C826976F-27AD-4FED-9135-379D354EA6B3}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gpuDemul", "..\..\gpuDemul\vc7.1\gpuDemul.vcproj", "{C543B598-978A-4B60-B2A7-028A1DD8E516}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gdrDemul", "..\..\gdrDemul\vc7.1\gdrDemul.vcproj", "{FCCB8F4E-3237-44A2-A662-A292CFD5C6D1}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "padDemul", "..\..\padDemul\vc7.1\padDemul.vcproj", "{6320B2E5-05CC-4D34-A21D-36EC0CF35E69}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "spuDemul", "..\..\spuDemul\vc7.1\spuDemul.vcproj", "{6396A770-F8AD-43C8-8091-C3CF0A361075}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{C826976F-27AD-4FED-9135-379D354EA6B3}.Debug.ActiveCfg = Debug|Win32
+		{C826976F-27AD-4FED-9135-379D354EA6B3}.Debug.Build.0 = Debug|Win32
+		{C826976F-27AD-4FED-9135-379D354EA6B3}.Release.ActiveCfg = Release|Win32
+		{C826976F-27AD-4FED-9135-379D354EA6B3}.Release.Build.0 = Release|Win32
+		{C543B598-978A-4B60-B2A7-028A1DD8E516}.Debug.ActiveCfg = Debug|Win32
+		{C543B598-978A-4B60-B2A7-028A1DD8E516}.Debug.Build.0 = Debug|Win32
+		{C543B598-978A-4B60-B2A7-028A1DD8E516}.Release.ActiveCfg = Release|Win32
+		{C543B598-978A-4B60-B2A7-028A1DD8E516}.Release.Build.0 = Release|Win32
+		{FCCB8F4E-3237-44A2-A662-A292CFD5C6D1}.Debug.ActiveCfg = Debug|Win32
+		{FCCB8F4E-3237-44A2-A662-A292CFD5C6D1}.Debug.Build.0 = Debug|Win32
+		{FCCB8F4E-3237-44A2-A662-A292CFD5C6D1}.Release.ActiveCfg = Release|Win32
+		{FCCB8F4E-3237-44A2-A662-A292CFD5C6D1}.Release.Build.0 = Release|Win32
+		{6320B2E5-05CC-4D34-A21D-36EC0CF35E69}.Debug.ActiveCfg = Debug|Win32
+		{6320B2E5-05CC-4D34-A21D-36EC0CF35E69}.Debug.Build.0 = Debug|Win32
+		{6320B2E5-05CC-4D34-A21D-36EC0CF35E69}.Release.ActiveCfg = Release|Win32
+		{6320B2E5-05CC-4D34-A21D-36EC0CF35E69}.Release.Build.0 = Release|Win32
+		{6396A770-F8AD-43C8-8091-C3CF0A361075}.Debug.ActiveCfg = Debug|Win32
+		{6396A770-F8AD-43C8-8091-C3CF0A361075}.Debug.Build.0 = Debug|Win32
+		{6396A770-F8AD-43C8-8091-C3CF0A361075}.Release.ActiveCfg = Release|Win32
+		{6396A770-F8AD-43C8-8091-C3CF0A361075}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
