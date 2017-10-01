@@ -17,8 +17,8 @@
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
 #ifdef _WIN32
-LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
-#pragma code_page(1251)
+LANGUAGE LANG_CHINESE, SUBLANG_DEFAULT
+#pragma code_page(20936)
 #endif //_WIN32
 
 /////////////////////////////////////////////////////////////////////////////
@@ -80,7 +80,7 @@ IDI_MAIN_ICON           ICON                    "demul_red.ico"
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
 #ifdef _WIN32
 LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_CN
-#pragma code_page(1252)
+#pragma code_page(20936)
 #endif //_WIN32
 
 /////////////////////////////////////////////////////////////////////////////
