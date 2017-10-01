@@ -28,21 +28,21 @@ LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
 
 IDD_BIOS_AND_PLUGINS DIALOGEX 0, 0, 251, 332
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
-CAPTION "Bios & Plugins"
+CAPTION "Bios & 插件"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-    DEFPUSHBUTTON   "OK",IDOK,128,310,50,14
-    PUSHBUTTON      "Cancel",IDCANCEL,189,310,50,14
-    GROUPBOX        "Video plugin",IDC_STATIC,49,2,148,46
+    DEFPUSHBUTTON   "确定",IDOK,128,310,50,14
+    PUSHBUTTON      "取消",IDCANCEL,189,310,50,14
+    GROUPBOX        "视频插件",IDC_STATIC,49,2,148,46
     COMBOBOX        IDC_BIOS_DIALOG_GPU,58,22,133,100,CBS_DROPDOWNLIST | 
                     CBS_SORT | WS_VSCROLL | WS_TABSTOP
-    GROUPBOX        "Sound plugin",IDC_STATIC,49,49,148,46
+    GROUPBOX        "声音插件",IDC_STATIC,49,49,148,46
     COMBOBOX        IDC_BIOS_DIALOG_SPU,58,70,133,100,CBS_DROPDOWNLIST | 
                     CBS_SORT | WS_VSCROLL | WS_TABSTOP
-    GROUPBOX        "GD-ROM plugin",IDC_STATIC,49,96,148,46
+    GROUPBOX        "GD-ROM 插件",IDC_STATIC,49,96,148,46
     COMBOBOX        IDC_BIOS_DIALOG_GDR,58,118,133,100,CBS_DROPDOWNLIST | 
                     CBS_SORT | WS_VSCROLL | WS_TABSTOP
-    GROUPBOX        "Game Pad plugin",IDC_STATIC,49,143,148,46
+    GROUPBOX        "手柄插件",IDC_STATIC,49,143,148,46
     COMBOBOX        IDC_BIOS_DIALOG_PAD,58,166,133,100,CBS_DROPDOWNLIST | 
                     CBS_SORT | WS_VSCROLL | WS_TABSTOP
     GROUPBOX        "Bios",IDC_STATIC,7,195,237,54
@@ -51,14 +51,14 @@ BEGIN
     EDITTEXT        IDC_BIOS_DIALOG_BIOS_DESCRIPTION,15,231,219,12,
                     ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP,
                     WS_EX_CLIENTEDGE
-    PUSHBUTTON      "Select",IDC_BIOS_DIALOG_BIOS_SELECT,190,210,45,12
+    PUSHBUTTON      "选择",IDC_BIOS_DIALOG_BIOS_SELECT,190,210,45,12
     GROUPBOX        "Flash",IDC_STATIC,7,250,237,54
     EDITTEXT        IDC_BIOS_DIALOG_FLASH,15,264,168,12,ES_AUTOHSCROLL | 
                     ES_READONLY | NOT WS_TABSTOP
     EDITTEXT        IDC_BIOS_DIALOG_FLASH_DESCRIPTION,15,286,219,12,
                     ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP,
                     WS_EX_CLIENTEDGE
-    PUSHBUTTON      "Select",IDC_BIOS_DIALOG_FLASH_SELECT,190,264,45,12
+    PUSHBUTTON      "选择",IDC_BIOS_DIALOG_FLASH_SELECT,190,264,45,12
 END
 
 
@@ -75,11 +75,11 @@ IDI_MAIN_ICON           ICON                    "demul_red.ico"
 
 
 /////////////////////////////////////////////////////////////////////////////
-// English (U.S.) resources
+// CHINESE (C.N.) resources
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
 #ifdef _WIN32
-LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_CN
 #pragma code_page(1252)
 #endif //_WIN32
 
@@ -90,21 +90,21 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 
 MENU MENU 
 BEGIN
-    MENUITEM "Run",                         IDR_EMU_RUN
-    POPUP "Config"
+    MENUITEM "运行",                         IDR_EMU_RUN
+    POPUP "配置"
     BEGIN
-        MENUITEM "Game Pad",                    ID_CONFIG_PAD
-        MENUITEM "Sound",                       ID_CONFIG_SPU
+        MENUITEM "手柄",                    ID_CONFIG_PAD
+        MENUITEM "声音",                       ID_CONFIG_SPU
         MENUITEM "GD-ROM",                      ID_CONFIG_GDR
-        MENUITEM "Video",                       ID_CONFIG_GPU
+        MENUITEM "视频",                       ID_CONFIG_GPU
         MENUITEM SEPARATOR
-        POPUP "Mode"
+        POPUP "模式"
         BEGIN
-            MENUITEM "Interpreter",                 ID_MODE_INTERPRETER
-            MENUITEM "DynaRec",                     ID_MODE_DYNAREC
+            MENUITEM "解释器",                 ID_MODE_INTERPRETER
+            MENUITEM "动态编译器",                     ID_MODE_DYNAREC
         END
         MENUITEM SEPARATOR
-        MENUITEM "Bios && Plugins",             ID_CONFIG_BIOS_AND_PLUGINS
+        MENUITEM "Bios && 插件",             ID_CONFIG_BIOS_AND_PLUGINS
     END
 END
 
@@ -134,7 +134,7 @@ END
 
 #endif    // APSTUDIO_INVOKED
 
-#endif    // English (U.S.) resources
+#endif    // CHINESE (C.N.) resources
 /////////////////////////////////////////////////////////////////////////////
 
 
