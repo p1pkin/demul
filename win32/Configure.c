@@ -63,7 +63,7 @@ bool LoadConfig() {
 	if (!IniFile_open(&iniFile, DEMUL_NAME)) return false;
 
 	if (!IniFile_exist(&iniFile)) {
-		MessageBox(GetActiveWindow(), "BIOS & Plugins not configured", "Demul", MB_ICONINFORMATION);
+		MessageBox(GetActiveWindow(), "BIOS & 插件未配置", "Demul", MB_ICONINFORMATION);
 		return SetConfig();
 	}
 
@@ -172,7 +172,7 @@ BOOL CALLBACK Configure(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) {
 			openFileName.lpstrFile = openFileBuf;
 			openFileName.lpstrFile[0] = '\0';
 			openFileName.nMaxFile = sizeof(openFileBuf);
-			openFileName.lpstrFilter = "All (*.*)\0*.*\0Bios file\0dc_bios.bin\0Flash file\0dc_flash.bin\0";
+			openFileName.lpstrFilter = "所有 (*.*)\0*.*\0Bios 文件\0dc_bios.bin\0Flash 文件\0dc_flash.bin\0";
 			if (LOWORD(wParam) == IDC_BIOS_DIALOG_BIOS_SELECT)
 				openFileName.nFilterIndex = 2;
 			if (LOWORD(wParam) == IDC_BIOS_DIALOG_FLASH_SELECT)
@@ -311,9 +311,9 @@ bool SetConfig() {
 }
 
 bool LoadBIOSFiles(CFG* aCfg, u8*biosBuf, u8*flashBuf, char** biosDescription, char** flashDescription) {
-	static char unableToRead[MAX_DESCRIPTION] = "Unable to read file";
-	static char unknownFile[MAX_DESCRIPTION] = "Unknown file";
-	static char goodSize[MAX_DESCRIPTION] = "Good size";
+	static char unableToRead[MAX_DESCRIPTION] = "无法读取文件";
+	static char unknownFile[MAX_DESCRIPTION] = "未知文件";
+	static char goodSize[MAX_DESCRIPTION] = "好的大小";
 	FILE *f;
 	u32 i;
 	u32 crc32;

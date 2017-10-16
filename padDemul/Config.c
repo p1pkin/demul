@@ -42,7 +42,7 @@ CFG tuneCfg;
 char* GetKeyName(u32 key) {
 	static char buf[32];
 	u8 joyIdx;
-	strcpy(buf, "NONE");
+	strcpy(buf, "无");
 
 	if (key < 256) {
 		if (key != 0)
@@ -480,7 +480,7 @@ char* GetKeyName(u32 key) {
 				strcpy(buf, "MEDIASELECT");
 				break;
 			default:
-				strcpy(buf, "UKNOWN");
+				strcpy(buf, "未知");
 				break;
 			}
 	} else {
@@ -494,10 +494,10 @@ char* GetKeyName(u32 key) {
 			}
 		} else if (key & KEY_JOY_POV) {
 			switch (key & 0xFF00) {
-			case CASE0: sprintf(buf, "JOY%d_DIG%d_%s", joyIdx, key & 3, "UP");      break;
-			case CASE1: sprintf(buf, "JOY%d_DIG%d_%s", joyIdx, key & 3, "RIGHT");   break;
-			case CASE2: sprintf(buf, "JOY%d_DIG%d_%s", joyIdx, key & 3, "DOWN");    break;
-			case CASE3: sprintf(buf, "JOY%d_DIG%d_%s", joyIdx, key & 3, "LEFT");    break;
+			case CASE0: sprintf(buf, "JOY%d_DIG%d_%s", joyIdx, key & 3, "上");      break;
+			case CASE1: sprintf(buf, "JOY%d_DIG%d_%s", joyIdx, key & 3, "右");   break;
+			case CASE2: sprintf(buf, "JOY%d_DIG%d_%s", joyIdx, key & 3, "下");    break;
+			case CASE3: sprintf(buf, "JOY%d_DIG%d_%s", joyIdx, key & 3, "左");    break;
 			}
 		}
 	}
@@ -713,10 +713,10 @@ bool SetConfig() {
 }
 
 void IniFile_LoadJoy(IniFile* iniFile, char*joyName, JOY* joy) {
-	joy->UP = IniFile_getLong(iniFile, joyName, "UP");
-	joy->DOWN = IniFile_getLong(iniFile, joyName, "DOWN");
-	joy->LEFT = IniFile_getLong(iniFile, joyName, "LEFT");
-	joy->RIGHT = IniFile_getLong(iniFile, joyName, "RIGHT");
+	joy->UP = IniFile_getLong(iniFile, joyName, "上");
+	joy->DOWN = IniFile_getLong(iniFile, joyName, "下");
+	joy->LEFT = IniFile_getLong(iniFile, joyName, "左");
+	joy->RIGHT = IniFile_getLong(iniFile, joyName, "右");
 	joy->A = IniFile_getLong(iniFile, joyName, "A");
 	joy->B = IniFile_getLong(iniFile, joyName, "B");
 	joy->C = IniFile_getLong(iniFile, joyName, "C");
@@ -738,10 +738,10 @@ void IniFile_LoadJoy(IniFile* iniFile, char*joyName, JOY* joy) {
 }
 
 void IniFile_SaveJoy(IniFile* iniFile, char*joyName, JOY* joy) {
-	IniFile_setLong(iniFile, joyName, "UP", joy->UP);
-	IniFile_setLong(iniFile, joyName, "DOWN", joy->DOWN);
-	IniFile_setLong(iniFile, joyName, "LEFT", joy->LEFT);
-	IniFile_setLong(iniFile, joyName, "RIGHT", joy->RIGHT);
+	IniFile_setLong(iniFile, joyName, "上", joy->UP);
+	IniFile_setLong(iniFile, joyName, "下", joy->DOWN);
+	IniFile_setLong(iniFile, joyName, "左", joy->LEFT);
+	IniFile_setLong(iniFile, joyName, "右", joy->RIGHT);
 	IniFile_setLong(iniFile, joyName, "A", joy->A);
 	IniFile_setLong(iniFile, joyName, "B", joy->B);
 	IniFile_setLong(iniFile, joyName, "C", joy->C);
@@ -773,7 +773,7 @@ bool LoadConfig(bool autoSetConfig) {
 	if (!IniFile_exist(&iniFile)) {
 		if (!autoSetConfig)
 			return true;
-		MessageBox(GetActiveWindow(), "padDemul not configured", PAD_MODULE_NAME, MB_ICONINFORMATION);
+		MessageBox(GetActiveWindow(), "padDemul 未配置", PAD_MODULE_NAME, MB_ICONINFORMATION);
 		return SetConfig();
 	}
 	for (i = 0; i < MAX_JOYS; i++) {
